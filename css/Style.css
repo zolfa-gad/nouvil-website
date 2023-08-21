@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* font-family: sans-serif; */
+  font-family: system-ui;
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(#200016, #10001f);
+  height: 100vh;
+}
+
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 30px;
+  height: 70px;
+  position: absolute;
+  width: 95%;
+  z-index: 1;
+  /* background-color: blue; */
+  /* gap: 30px; */
+}
+
+.navigator ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 30px;
+}
+
+.navigator ul a {
+  padding: 5px 15px;
+}
+
+.navigator ul a:hover,
+.navActiveItem {
+  background-color: white;
+  color: #200016;
+  border-radius: 10px;
+}
+
+a {
+  color: white;
+}
+
+#logoText {
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.mainSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mainSection::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  /* background-color: black; */
+  background: linear-gradient(to top, #200016, transparent);
+}
+
+.mainSection img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+
+#moon {
+  mix-blend-mode: screen;
+  transform: translateY(40px);
+}
+
+#nouvilText {
+  transform: translateY(-190px);
+  font-size: 30px;
+}
+
+.contentSection {
+  color: white;
+  padding: 40px;
+  transform: translateY(50px);
+}
+
+.contentSection h2 {
+  font-size: 40px;
+}
+
+.contentSection p {
+  font-size: 20px;
+  padding: 0 20px;
+}
